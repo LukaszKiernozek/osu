@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+    canvas {
+      border: 10px solid rgb(77, 77, 77);
+      background-color: black;
+      margin-left: auto;
+    }
+    body{
+      background-color: gray;
+    }
+    p{
+      font-family: MS Gothic;
+      font-size: 0.7cm;
+      ;
+    }
+    button{
+      font-size: 1cm;
+    }
+  </style>
+  <body>
+    <canvas id="game-canvas"></canvas>
+    
+    <p></p>
+    <audio autoplay="autoplay" controls="controls">
+        <source src="SONG.mp3" />     
+    </audio>
+    SCROLL DOWN FOR INSTRUCTIONS
+    <b>
+    <p>Play using mouse only (i failed to make keyboard work)</p>
+    <p>You have to play the song manually</p>
+    <p>Clicking a circle will give you 300 score + additional amount from combo multiplier</p>
+    <p>Missing a circle will reset your combo and take away 300 score</p>
+    <p>This isnt a rhythm game, clicking early or late doesnt do shit :/</p>
+  </b>
+    <button onclick="ARup()">AR+</button> 
+    <button onclick="ARdown()">AR-</button> 
+    <p></p>
+    <button onclick="CSup()">CS+</button> 
+    <button onclick="CSdown()">CS-</button>
+    <p></p> 
+    <button onclick="Default()">Default Settings</button> 
+    <script src="game.js"></script>
+  </body>
+</html>
